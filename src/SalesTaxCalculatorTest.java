@@ -19,6 +19,7 @@ public class SalesTaxCalculatorTest {
         basket = new ArrayList<>();
         outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
+        Locale.setDefault(Locale.US);
     }
 
     // Testfall für den ersten Einkaufskorb
