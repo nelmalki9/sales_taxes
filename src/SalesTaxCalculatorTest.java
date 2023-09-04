@@ -35,12 +35,12 @@ public class SalesTaxCalculatorTest {
                 1 chocolate bar: 0.85
                 Sales Taxes: 1.50
                 Total: 29.83
-                """;
+                """.replace("\n", System.lineSeparator());
 
 
         SalesTaxCalculator.processShoppingBasket(basket);
 
-        assertEquals(expectedOutput, outputStream);
+        assertEquals(expectedOutput, outputStream.toString());
     }
 
     // Testfall für den zweiten Einkaufskorb
@@ -54,12 +54,12 @@ public class SalesTaxCalculatorTest {
                 1 imported bottle of perfume: 54.65
                 Sales Taxes: 7.65
                 Total: 65.15
-                """;
+                """.replace("\n", System.lineSeparator());
 
 
         SalesTaxCalculator.processShoppingBasket(basket);
 
-        assertEquals(expectedOutput, outputStream);
+        assertEquals(expectedOutput, outputStream.toString());
     }
 
     // Testfall für den dritten Einkaufskorb
@@ -77,11 +77,11 @@ public class SalesTaxCalculatorTest {
                 1 box of imported chocolates: 11.85
                 Sales Taxes: 6.70
                 Total: 74.68
-                """;
+                """.replace("\n", System.lineSeparator());
 
 
         SalesTaxCalculator.processShoppingBasket(basket);
 
-        assertEquals(expectedOutput, outputStream);
+        assertEquals(expectedOutput, outputStream.toString());
     }
 }
